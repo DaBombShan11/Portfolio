@@ -25,6 +25,13 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-size: 16px; /* Set the default font size */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and transform */
+}
+
+nav ul li a:hover {
+    color: #ffcccb; /* Change color on hover (pink) */
+    transform: scale(1.2); /* Enlarge on hover */
 }
 
 header {
@@ -33,6 +40,29 @@ header {
     text-align: center;
 }
 
+.header-title {
+    display: flex; /* Align items horizontally */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+.hello-image {
+    width: 3em; /* Adjust size as needed */
+    height: auto;
+    margin-right: 10px; /* Space between image and text */
+}
+
+.header-text {
+    font-size: 2em; /* Adjust text size as needed */
+    font-weight: bold;
+}
+
+.header-text img {
+    width: 1.5em; /* Adjust size as needed */
+    height: auto;
+    vertical-align: middle; /* Align image with text */
+    margin: 0 5px; /* Space around images */
+}
 section {
     padding: 20px;
 }
@@ -41,8 +71,7 @@ footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px;
-    position: fixed;
+    padding: 5px;
     bottom: 0;
     width: 100%;
 }
@@ -55,23 +84,42 @@ footer {
     margin: 0 auto; /* Centers the image */
 }
 
+.socials {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.socials-box {
+    text-align: center;
+    background-color: #FF00FF; /* Pink background color */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for a subtle 3D effect */
+}
+
+.socials-box h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
 .social-links {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    gap: 15px;
 }
 
 .social-links a {
-    color: #333; /* Icon color */
-    font-size: 24px; /* Icon size */
-    margin: 0 10px; /* Space between icons */
+    color: #333;
+    font-size: 24px;
     text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .social-links a:hover {
     color: #007bff; /* Change color on hover */
+    transform: scale(1.2); /* Enlarge on hover */
 }
-
 .carousel {
     position: relative;
     width: 100%;
@@ -111,4 +159,23 @@ footer {
 
 .next {
     right: 0;
+}
+
+.mission {
+    text-align: center; /* Center all content within the mission section */
+    padding: 20px; /* Add padding around the section */
+}
+
+.mission-content {
+    display: inline-block; /* Makes the content block fit to the width of its content */
+    text-align: center; /* Ensures that text is centered */
+}
+
+.mission-image {
+    max-width: 100%; /* Ensures the image does not overflow its container */
+    height: auto; /* Maintains the aspect ratio */
+}
+
+.mission-description {
+    margin-top: 10px; /* Adds space between the image and the description */
 }
