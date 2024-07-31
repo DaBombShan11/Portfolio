@@ -46,3 +46,69 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+.profile-pic {
+    width: 150px; /* Adjust size as needed */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 50%; /* Makes the image round */
+    display: block;
+    margin: 0 auto; /* Centers the image */
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: #333; /* Icon color */
+    font-size: 24px; /* Icon size */
+    margin: 0 10px; /* Space between icons */
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    height: 50px;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
