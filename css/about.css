@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #4b0082, #000000); 
+    color: #D3D3D3; /* White text color for better contrast */
+    font-size: 20px;
+}
+
+nav {
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-name {
+    font-size: 24px; /* Adjust font size as needed */
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+    color: #5D3FD3;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+.nav-links li a:hover {
+    color: #5D3FD3; /* Change color on hover */
+    transform: scale(1.1); /* Enlarge on hover */
+}

@@ -1,0 +1,208 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #4b0082, #000000); 
+    color: #D3D3D3; /* White text color for better contrast */
+    font-size: 20px;
+}
+
+nav {
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-name {
+    font-size: 24px; /* Adjust font size as needed */
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+    color: #5D3FD3;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+.nav-links li a:hover {
+    color: #5D3FD3; /* Change color on hover */
+    transform: scale(1.1); /* Enlarge on hover */
+}
+
+section {
+    padding: 20px;
+}
+
+.intro-carousel {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.intro-section {
+    max-width: 50%;
+}
+
+.intro-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.intro-section h3 {
+    font-size: 70px;
+}
+
+.intro-section h4 {
+    line-height: 0px;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.achievements {
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: space-around; /* Space out the boxes evenly */
+    margin-top: 80 px; /* Space above the achievements section */
+    padding: 10px 0; /* Optional padding around the section */
+    margin-bottom: 10 px;
+}
+
+.achievement-box {
+    background-color: #702963; /* Pink background */
+    color: #FFFFFF; /* White text color */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    font-size: 16px;
+    text-align: center; /* Center the text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for a subtle 3D effect */
+    flex: 1; /* Allow boxes to grow and fill the space */
+    margin: 0 10px; /* Space between boxes */
+}
+
+.achievement-number {
+    font-size: 36px; /* Large font size for the number */
+    font-weight: bold;
+}
+
+.achievement-text {
+    font-size: 16px; /* Font size for the text below the number */
+}
+
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Set a maximum width for the carousel */
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    height: 400px; /* Set a fixed height for the carousel */
+}
+
+.carousel-slide img {
+    width: auto; /* Adjust width to maintain aspect ratio */
+    height: 100%; /* Ensure image takes full height of the carousel */
+    object-fit: cover; /* Ensure image covers the container */
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    height: auto; /* Allow height to adjust based on content */
+    padding: 10px; /* Adjust padding to control the size of arrows */
+    color: white;
+    font-weight: bold;
+    font-size: 30px; /* Increase font size for better visibility */
+    cursor: pointer;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border-radius: 50%; /* Rounded corners for a circular appearance */
+    transform: translateY(-50%); /* Center vertically */
+    z-index: 10; /* Ensure arrows are above images */
+}
+
+.prev {
+    left: 10px; /* Position from the left edge */
+}
+
+.next {
+    right: 10px; /* Position from the right edge */
+}
+
+
+.gradient-text {
+    background: linear-gradient(to right, #ff69b4, #4b0082); /* Pink to purple gradient */
+    background-clip: text;
+    color: transparent;
+}
+
+
+.socials {
+    display: flex;
+    justify-content: left;
+    padding: 20px;
+}
+
+
+.social-links {
+    display: flex;
+    justify-content: left;
+    gap: 15px;
+}
+
+.social-links a {
+    color: #333;
+    font-size: 24px;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #FF00FF; /* Change color on hover */
+    transform: scale(1.2); /* Enlarge on hover */
+}
+
+footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; /* Aligns items to the right */
+    align-items: flex-end; /* Aligns items to the bottom */
+}
+
+.footer-copyright {
+    margin: 0; /* Remove default margin */
+}
