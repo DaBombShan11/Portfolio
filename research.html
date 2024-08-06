@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research</title>
+    <link rel="stylesheet" href="css/research.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="nav-name">Ashanti Boone</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="academic.html">Academic</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section class="research-content">
+            <div class="title-cards">
+                <h2>Research in Classes</h2>
+                <div class="title-card" onclick="showDetails('academic1')">
+                    <h3>Software Security</h3>
+                </div>
+                <div class="title-card" onclick="showDetails('academic2')">
+                    <h3>Multithreads</h3>
+                </div>
+                
+                <h2>Research with Advisors</h2>
+                <div class="title-card" onclick="showDetails('advisor1')">
+                    <h3>Natural Language Processing - Dementia</h3>
+                </div>
+                <div class="title-card" onclick="showDetails('advisor2')">
+                    <h3>Natural Language Processing - Conferences</h3>
+                </div>
+                
+                <h2>Personal Research</h2>
+                <div class="title-card" onclick="showDetails('personal1')">
+                    <h3>Natural Language Processing = Fake News</h3>
+                </div>
+            </div>
+            <div class="details-pane" id="details-pane">
+                <h2>Details</h2>
+                <p>Select a project to see the details here.</p>
+                <img src="data:image/jpeg;base64,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" alt="Description of image" width="500" height="500" align="center">
+
+                <!-- File content section -->
+                <div class="file-content" id="file-content" style="display: none;">
+                    <h3>File Content</h3>
+                    <pre id="file-text">Loading file content...</pre>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Follow me on:
+            <div class="footer-socials">
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/ashanti-boone-15b526221/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/dabombshan/" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@ashanticreates7?lang=en" target="_blank" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://www.youtube.com/channel/UCm6AoHUViNoFoqPq7tzDShg" target="_blank" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </p>
+        <p>&copy; 2024 Ashanti Boone. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const projectDetails = {
+            'academic1': {
+                title: 'Software Security in Health Care Systems',
+                overview: `
+                This paper reviews key elements of software security in healthcare systems, focusing on the protection of sensitive medical information.
+                
+                It examines two studies: one that advocates for secure managerial strategies to safeguard medical networks and another that introduces the fuzzy-ANP-TOPSIS methodology for evaluating software security and usability.
+                
+                The paper aims to offer recommendations for enhancing healthcare system security and usability, addressing current vulnerabilities and providing a framework for future research.
+            `,
+                objectives: `
+                1. To summarize and analyze key findings from two studies on healthcare software security. \n
+                2. To evaluate the effectiveness of proposed security strategies and methodologies. \n
+                3. To provide recommendations for improving the security and usability of healthcare systems. \n
+                4. To identify future research directions for implementing and refining security measures in real-world healthcare settings.
+                `,
+                description: 'The paper provides an overview of the challenges and solutions related to software security in healthcare systems. It reviews two significant studies: the first emphasizes implementing secure strategies at the managerial level to protect patient data and comply with regulations like HIPAA, while the second introduces a novel methodology combining Analytic Network Process (ANP), Fuzzy Sets (FS), and Technique for Order of Preference by Similarity to Ideal Solution (TOPSIS) to assess usability-security in healthcare applications. The paper details the methodologies used in these studies, including proposed firewall strategies and the fuzzy ANP-TOPSIS framework. It also discusses the results of these studies, including the identification of best practices for secure software and usability assessments.',
+                results: `The first study highlights the need for robust security measures, including various firewall configurations and types, to protect healthcare systems from external and internal threats. The study underscores the importance of tailoring security strategies to specific organizational needs and ensuring compliance with regulatory standards.
+                The second study's fuzzy ANP-TOPSIS methodology successfully assessed the usability-security of different healthcare management software, with HMSSS-5 identified as the optimal solution. This methodology provided valuable insights into balancing security with user satisfaction and highlighted the potential of combining fuzzy logic with MCDM techniques for improved decision-making in healthcare software security.
+                `,
+                status: 'Completed and presented to class in May 2024 - Received an A.',
+                links: [
+                    { text: 'Research Paper', url: 'https://docs.google.com/document/d/1VZuHI_sTWDksaOhu1W_KwglEb4wl2Hf6/edit?usp=sharing&ouid=115456605977054212292&rtpof=true&sd=true'}, 
+                    { text: 'Presentation', url: 'https://docs.google.com/presentation/d/1stHf_SOfeZxVeYOXal9qIK6crPYq27lJ/edit?usp=sharing&ouid=115456605977054212292&rtpof=true&sd=true'}
+                ],
+                team: '',
+                funding: '',
+                acknowledgments: 'Dr. Kato Mivule',
+                contact: '',
+                images: ['https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4FHzSW4MDaYX8YUhRS_lHEFryCX-jbET4xA&s', 'https://sph.umich.edu/pursuit/2019posts/2019images/global-health-work-inform-transform-us-healthcare_670_350.jpg']
+            },
+            'academic2': {
+                title: 'Threaded Image Processing: Optimizing Conversion and Resizing Operations',
+                overview: `
+                This paper explores the usage of multithreading to decrease image processing time. 
+                This proposal analyzes a multithreaded image conversion and resizing approach, focusing on resource utilization and thread synchronization. 
+                The experiment results will show a significant reduction in time, which will be used to highlight the effectiveness of using multithreads to process images. 
+                This paper also examines the CPU utilization across different Windows and MacOS systems when completing these image processing tasks. 
+
+            `,
+                objectives: `
+                1. Design and Implement a Multithreaded Processing Framework \n
+                2. Optimize Thread Management \n
+                3. Performance Analysis \n
+                4. Error Handling and Reliability \n
+                
+                This project aims to improve the efficiency and speed of image processing by achieving these goals.
+                
+                `,
+                description: `This research explores the efficiency of image processing through multithreading compared to traditional single-threaded methods, particularly highlighting the extended processing times associated with large datasets. 
+                By implementing multithreading techniques in Python using concurrent futures, threading, and multiprocessing modules, the study aims to demonstrate how multithreading can significantly reduce execution time and improve overall efficiency.
+
+                Using a dataset of 100 images, the research evaluates four key image processing tasks—type conversion, resizing, segmentation, and annotation—across both MacOS and Windows operating systems. 
+                The experimental setup includes creating and running both single-threaded and multithreaded scripts, with performance metrics such as execution time, CPU utilization, and memory usage being analyzed. 
+                The expected outcome is to showcase the effectiveness of multithreading in speeding up image processing tasks and optimizing resource usage.
+                `,
+                results: `The experiment was carried out on various devices that contained different processing cores, which would also be a factor in the difference in the result. 
+                The variables measured across the devices were the time taken to complete each process and the resources used up by the CPU. 
+                The devices used  are a Thinkpad with an Intel Core, an Apple MacBook Pro containing an Intel Core, an Asus using an AMD Ryzen core, and an HP 360x Envy using an AMD Rzyen core. 
+                The MacBook Pro shows a high CPU utilization in single threading and multithreading processes, 
+                indicating a wide utilization of its CPU resources, the HP and ThinkPad show lower CPU usage in the multithreading process, 
+                which may be an indication of underutilization or efficient CPU management depending on the task demands. 
+                The variation in the results shows the importance of  tailoring software to use each system's hardware effectively; 
+                this optimizes performance and resource utilization. 
+
+                `,
+                status: 'Completed and presented to class in May 2024 - Received an A.',
+                links: [
+                    { text: 'Research Paper', url: 'https://docs.google.com/document/d/19tcOnBqhqdqj7CAarYeRzJZGwseSbPoNkatGxutVxfk/edit?usp=sharing' },
+                    { text: 'Research Presentation', url: 'https://docs.google.com/presentation/d/1IAyiIYWK6N-CHjlcT6iq48E6YNcl-LScDRlxObkQDtE/edit?usp=sharing'},
+                    { text: 'Code', url: 'https://github.com/DaBombShan11/COSC-414---Group-9'}
+                ],
+                team: 'Hanaa Salim, Ashanti Boone, Kiishi Ogunbiyi, Nicole Balay',
+                funding: '',
+                acknowledgments: 'Dr. Timothy Oladunni',
+                contact: '',
+                images: ['images/research/414_results.png', 'images/research/414_analysis.png']
+            },
+
+            'advisor1': {
+                title: 'Analyzing Text Based on Dementia Blog Posts​',
+                overview: `The project aims to investigate the feasibility of using Term Frequency-Inverse Document Frequency (TF-IDF) analysis 
+                in conjunction with artificial intelligence (AI) to analyze dementia-related discussions. The goal is to identify emotional responses
+                and needs of caregivers by analyzing user posts on public discussion boards related to dementia.`,
+                objectives: `1. Analyze Emotional Responses: Identify emotional responses in user posts related to dementia. \n
+                             2. Assess Caregivers' Needs: Determine the needs of caregivers based on their posts. \n
+                             3. Expand Corpus: Broaden the word corpus to include more comments from the Dementia Forum. \n
+                             4. Generate Accurate Insights: Improve the accuracy of topic relevance and concerns within the dementia community.`,
+                description: `The project is divided into four stages: data collection (gather user post information from public discussion boards related to dementia), 
+                preprocessing (clean and prepare the data for analysis), feature extraction (apply TF-IDF analysis to extract meaningful features 
+                from the text data), and model generation (develop AI models to analyze and interpret the extracted features).
+                Currently, the research is in the preliminary stage, having analyzed the TF-IDF of two comments to start understanding the data.`,
+                results: `At this stage, the analysis has been limited to two comments, which provides initial insights but is not yet comprehensive. 
+                The next steps involve expanding the word corpus by including more comments from the Dementia Forum to enhance the accuracy of the 
+                analysis. The resulting TF-IDF scores will help to better understand the relative importance of terms within the comments and 
+                the overall post data, leading to a clearer picture of the key topics and concerns in the dementia community. `,
+                status: 'Completed preliminary stages; presented findings at Bowie States Research and Innovation Symposium in Fall 2023 and won first place for undergraduate research.',
+                links: [ {text: 'Research Poster', url: 'https://drive.google.com/file/d/1pF5N6uLl7Me70ulrrJp19FVeSaY84lkG/view?usp=sharing'}
+                ],
+                team: 'Aron Bishop and Ashanti Boone',
+                funding: 'This material is based upon work supported by the Army Research Office (Grant No. W911NF-18-1-0460) and partially supported by an NSF grant (Grant No. 2219634)​',
+                acknowledgments: 'Soo-Yeon Ji',
+                contact: '',
+                images: [ 'images/research/expo_results.png', 'images/research/expo_poster.jpeg'
+                ]
+            },
+            'advisor2': {
+                title: 'Leveraging  Natural Language processing to Uncover Opportunities for Women in Technology: A Comprehensive Analysis of Tech Conferences',
+                overview: 'Our research is a mixture of social justice and statistics and we plan to research why tech opportunities targeted towards women and underrepresented genders are necessary. ',
+                objectives: `1. Assess Necessity: Explore the need for tech opportunities targeted at women and underrepresented genders. \n
+                2. Apply Social Justice Principles: Integrate social justice principles with statistical analysis to evaluate tech opportunities. \n
+                3. Analyze Sentiment: Determine the sentiment in LinkedIn posts related to the Grace Hopper Celebration (GHC) using natural language processing (NLP).
+                `,
+                description: `The methodology involved collecting LinkedIn posts related to the Grace Hopper Celebration (GHC) and processing the data using natural 
+                language processing techniques. The data was cleaned by combining words, removing emojis, and eliminating stop words. 
+                Sentiment analysis was then performed using the TextBlob library to determine the ratio of positive, negative, and neutral 
+                sentiments. Due to time constraints, the initial analysis was limited to two LinkedIn posts.`,
+                results: `The preliminary analysis of the two posts revealed a positive sentiment of 5.01%, a negative sentiment of 1.39%,
+                 and a neutral sentiment of 93.59%. These initial findings suggest that the majority of sentiment in the posts is neutral,
+                 with a small proportion expressing positive and negative emotions. Future work aims to expand the dataset by incorporating
+                 data from additional platforms and refining the sentiment analysis methodologies. This will provide a more comprehensive 
+                 understanding of the impact and necessity of tech opportunities for women and underrepresented genders.`,
+                status: 'Ongoing',
+                links: [
+                ],
+                team: 'Ashanti Boone, Nicole Balay, Mikayla Lomax',
+                funding: '',
+                acknowledgments: 'Fahminanur Salma',
+                contact: '',
+                images: ['images/research/wics_results.png', 'images/research/wics_poster.png'
+                ]
+            },
+            'personal1': {
+                title: 'Fake News Detection',
+                overview: `Create an NLP system that can identify and flag potentially fake news articles using linguistic features 
+                and metadata. If a user is unsure if what they found is fake, they can check it to see if they should actually believe 
+                the information. `,
+                objectives: '',
+                description: '',
+                results: '',
+                status: 'Upcoming!!',
+                links: [
+                ],
+                team: '',
+                funding: '',
+                acknowledgments: '',
+                contact: '',
+                images: ['images/research/work_in_progress.jpeg', 'images/research/fake_news.jpeg'
+                ]
+            }
+            // Other projects
+        };
+
+        async function fetchFileContent(url) {
+            try {
+                const response = await fetch(url);
+                if (!response.ok) throw new Error('Network response was not ok');
+                return await response.text();
+            } catch (error) {
+                console.error('Failed to fetch file content:', error);
+                return 'Failed to load file content.';
+            }
+        }
+    
+        function showDetails(projectId) {
+            // Check if projectId exists in projectDetails
+            if (!projectDetails[projectId]) {
+                console.error('Project not found:', projectId);
+                return;
+            }
+            
+            const details = projectDetails[projectId];
+            const detailsPane = document.getElementById('details-pane');
+            const fileContent = document.getElementById('file-content');
+            const fileText = document.getElementById('file-text');
+        
+            // Construct HTML for details pane
+            detailsPane.innerHTML = `
+                <h2>${details.title || 'No Title Available'}</h2>
+                ${details.overview ? `<p><strong>Overview:</strong> ${details.overview}</p>` : ''}
+                ${details.objectives ? `<p><strong>Objectives:</strong><br>${details.objectives.replace(/\n/g, '<br>')}</p>` : ''}
+                ${details.description ? `<p><strong>Description:</strong><br>${details.description}</p>` : ''}
+                ${details.results ? `<p><strong>Results:</strong><br>${details.results}</p>` : ''}
+                ${details.status ? `<p><strong>Status:</strong><br>${details.status}</p>` : ''}
+                ${details.team ? `<p><strong>Team:</strong> ${details.team}</p>` : ''}
+                ${details.funding ? `<p><strong>Funding:</strong> ${details.funding}</p>` : ''}
+                ${details.acknowledgments ? `<p><strong>Acknowledgments:</strong> ${details.acknowledgments}</p>` : ''}
+                ${details.contact ? `<p><strong>Contact Information:</strong> ${details.contact}</p>` : ''}
+                ${details.images.length > 0 ? `
+                    <div class="image-gallery">
+                        ${details.images.map(image => `
+                            <div class="image-box">
+                                <img src="${image}" alt="${details.title} Image">
+                            </div>
+                        `).join('')}
+                    </div>
+                ` : ''}
+            `;
+        
+            // Check if there is a link to a file and fetch its content
+            if (details.links.length > 0) {
+                const fileLink = details.links[0].url; // Assuming the first link is the file
+                fetchFileContent(fileLink).then(content => {
+                    fileText.textContent = content; // Display the file content
+                });
+                fileContent.style.display = 'block'; // Show the file content section
+            } else {
+                fileContent.style.display = 'none'; // Hide the file content section if no file
+            }
+        }
+    </script>
+    
+</body>
+</html>
