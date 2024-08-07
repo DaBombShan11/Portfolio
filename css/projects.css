@@ -1,0 +1,238 @@
+/* Ensure the HTML and body take full height */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding: 0;
+    background: linear-gradient(to bottom, #4b0082, #000000); 
+    color: #D3D3D3; /* White text color for better contrast */
+    font-size: 20px;
+}
+
+/* Main container to hold content and footer */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navigation styling */
+nav {
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-name {
+    font-size: 24px; /* Adjust font size as needed */
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+    color: #5D3FD3;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+.nav-links li a:hover {
+    color: #5D3FD3; /* Change color on hover */
+    transform: scale(1.1); /* Enlarge on hover */
+}
+
+/* Main content layout */
+main {
+    display: flex;
+    flex: 1;
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 200px;
+    background-color: #A95C68;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.sidebar ul li a:hover {
+    background-color: #ddd;
+}
+
+.dropdown-menu {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: #800080;
+}
+
+.dropdown-menu li {
+    margin: 5px 0;
+}
+
+.dropdown-menu li a {
+    color: #800080;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.dropdown-menu li a:hover {
+    text-decoration: underline;
+}
+
+/* Content styling */
+.content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+/* Carousel styling */
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.carousel-inner {
+    display: flex;
+    flex-wrap: nowrap;
+    transition: transform 0.5s linear;
+    will-change: transform;
+}
+
+.carousel-inner .title-card {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px;
+    background-color: #702963;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.carousel-inner .title-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Project details styling */
+.project-details {
+    background-color: #953553;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.project-details h2 {
+    margin-top: 0;
+}
+
+.project-details .screenshots {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.project-details .screenshots img {
+    max-width: 100%;
+    height: auto;
+    width: 100px; /* Adjust size as needed */
+}
+
+.project-details .links {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-details .links a {
+    color: #007bff;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.project-details .links a:hover {
+    text-decoration: underline;
+}
+
+/* Footer styling */
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 15px; /* Adjust padding as needed */
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.3);
+    margin-top: auto; /* Ensures footer stays at the bottom */
+}
+
+footer p {
+    margin: 0;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-links a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #FF00FF;
+}
+
+/* Ensure footer stays at the bottom of the page */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}

@@ -175,7 +175,7 @@ section {
 
 .social-links {
     display: flex;
-    justify-content: left;
+    justify-content: center;
     gap: 15px;
 }
 
@@ -192,17 +192,14 @@ section {
 }
 
 footer {
-    background-color: black;
-    color: #fff;
+    background: black;
+    color: white;
     text-align: center;
     padding: 5px;
     bottom: 0;
     width: 100%;
-    display: flex;
-    justify-content: flex-end; /* Aligns items to the right */
-    align-items: flex-end; /* Aligns items to the bottom */
 }
 
-.footer-copyright {
-    margin: 0; /* Remove default margin */
+footer p {
+    margin: 0;
 }
