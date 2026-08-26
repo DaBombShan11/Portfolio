@@ -1,4 +1,5 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa"
+const BASE_URL = import.meta.env.BASE_URL
 
 function Hero() {
   return (
@@ -41,7 +42,7 @@ function Hero() {
               </a>
 
               <a
-                href="/documents/resume.pdf"
+                href={`${BASE_URL}documents/resume.pdf`}
                 target="_blank"
                 rel="noreferrer"
                 className="border border-pink-400/50 px-6 py-3 rounded-lg font-semibold hover:border-pink-300 hover:text-pink-200 transition"
@@ -83,7 +84,7 @@ function Hero() {
               <div className="absolute -inset-5 border border-pink-400/40 rounded-3xl rotate-3"></div>
 
               <img
-                src="/images/profile-headshot.jpg"
+                src={`${BASE_URL}images/profile-headshot.jpg`}
                 alt="Ashanti Boone"
                 className="relative w-72 md:w-80 lg:w-96 aspect-[4/5] object-cover rounded-3xl"
               />

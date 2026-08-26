@@ -1,3 +1,4 @@
+const BASE_URL = import.meta.env.BASE_URL
 function Navbar() {
   return (
     <nav className="fixed top-0 left-0 w-full bg-[#0F0A12]/90 backdrop-blur-md border-b border-slate-800 z-50">
@@ -5,7 +6,7 @@ function Navbar() {
 
         <a href="#home">
           <img
-            src="/images/profile-headshot.jpg"
+            src={`${BASE_URL}images/profile-headshot.jpg`}
             alt="Ashanti Boone"
             className="h-10 w-10 rounded-full object-cover"
           />
@@ -29,7 +30,7 @@ function Navbar() {
           </a>
 
           <a
-            href="/documents/resume.pdf"
+            href={`${BASE_URL}documents/resume.pdf`}
             target="_blank"
             rel="noreferrer"
             className="hover:text-white transition"
