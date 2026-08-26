@@ -1,11 +1,12 @@
 import { useState } from "react"
+
 const BASE_URL = import.meta.env.BASE_URL
 
 const communities = [
   {
     name: "Girls Who Code",
     shortLabel: "GWC",
-    image: "{BASE_URL}images/community-girls-who-code.jpg",
+    image: `${BASE_URL}images/community-girls-who-code.jpg`,
     details: [
       "Alumni Advisory Council member",
       "Public speaker and panelist",
@@ -16,7 +17,7 @@ const communities = [
   {
     name: "Bowie State University",
     shortLabel: "HBCU Alum",
-    image: "{BASE_URL}images/community-bowie-state.jpg",
+    image: `${BASE_URL}images/community-bowie-state.jpg`,
     details: [
       "B.S. in Computer Science",
       "Proud HBCU alumna",
@@ -27,7 +28,7 @@ const communities = [
   {
     name: "GEM Fellowship",
     shortLabel: "GEM Fellow",
-    image: "{BASE_URL}images/community-gem.jpg",
+    image: `${BASE_URL}images/community-gem.jpg`,
     details: [
       "Employer Fellow",
       "Fully funded graduate tuition at Georgia Tech",
@@ -38,7 +39,7 @@ const communities = [
   {
     name: "ColorStack",
     shortLabel: "ColorStack",
-    image: "{BASE_URL}images/community-colorstack.jpg",
+    image: `${BASE_URL}images/community-colorstack.jpg`,
     details: [
       "Member of a community supporting Black and Latinx students in computing",
       "Hosted a ColorStack community meetup in Dallas",
@@ -52,27 +53,27 @@ const awards = [
     title: "NASA MITTIC Winner",
     subtitle: "Screen Sight",
     year: "2025",
-    image: "{BASE_URL}images/award-nasa-mittic.jpg",
+    image: `${BASE_URL}images/award-nasa-mittic.jpg`,
     description:
       "Led a team developing Screen Sight, an accessibility solution that adapts digital displays based on a user's vision prescription. Through NASA MITTIC, we used NASA technology and commercialization methods, presented our concept in Houston, and won a $20,000 prize.",
     linkText: "View Presentation",
-    link: "{BASE_URL}documents/screensight-presentation.pdf",
+    link: `${BASE_URL}documents/screensight-presentation.pdf`,
   },
   {
     title: "NCWIT AiC Collegiate Award Finalist",
     subtitle: "Multithreading Research",
     year: "2025",
-    image: "{BASE_URL}images/award-ncwit.jpg",
+    image: `${BASE_URL}images/award-ncwit.jpg`,
     description:
       "Recognized as a collegiate award finalist for research exploring multithreading and parallel computing, with a focus on improving performance through concurrent processing.",
     linkText: "Read Paper",
-    link: "{BASE_URL}documents/multithreading-paper.pdf",
+    link: `${BASE_URL}documents/multithreading-paper.pdf`,
   },
   {
     title: "Dean's Outstanding Alumna",
     subtitle: "Bowie State University",
     year: "2025",
-    image: "{BASE_URL}images/award-deans-outstanding-alumna.jpg",
+    image: `${BASE_URL}images/award-deans-outstanding-alumna.jpg`,
     description:
       "Recognized by Bowie State University for academic, technical, and community impact. My graduate spotlight highlights my path through computer science, industry internships, accessibility innovation, and my long-term interest in AI policy.",
     linkText: "Read Bowie State Feature",
