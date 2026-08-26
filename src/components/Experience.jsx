@@ -1,4 +1,5 @@
 import { useState } from "react"
+const BASE_URL = import.meta.env.BASE_URL
 
 const experiences = [
   {
@@ -7,7 +8,7 @@ const experiences = [
     location: "Dallas, TX",
     dates: "May 2026 – Aug 2026",
     year: "2026",
-    image: "/images/experience-goldman.jpg",
+    image: "`${BASE_URL}images/experience-goldman.jpg",
     summary:
       "Built production features for an internal liquidity platform supporting audit and reporting workflows.",
     bullets: [
@@ -31,7 +32,7 @@ const experiences = [
     location: "Laurel, MD",
     dates: "May 2025 – Aug 2025",
     year: "2025",
-    image: "/images/experience-jhu-apl.jpg",
+    image: "`${BASE_URL}images/experience-jhu-apl.jpg",
     summary:
       "Developed engineering tools and investigated performance tradeoffs across multithreaded data-processing implementations.",
     bullets: [
@@ -55,7 +56,7 @@ const experiences = [
     location: "Austin, TX",
     dates: "May 2024 – Aug 2024",
     year: "2024",
-    image: "/images/experience-apple-2024.jpg",
+    image: "`${BASE_URL}images/experience-apple-2024.jpg",
     summary:
       "Improved internal engineering workflows by maintaining automation tools and adding pre-commit code validation.",
     bullets: [
@@ -77,7 +78,7 @@ const experiences = [
     location: "Austin, TX",
     dates: "May 2023 – Aug 2023",
     year: "2023",
-    image: "/images/experience-apple-2023.jpg",
+    image: "`${BASE_URL}images/experience-apple-2023.jpg",
     summary:
       "Automated hardware-test data processing and visualization to make engineering workflows significantly faster.",
     bullets: [
@@ -100,7 +101,7 @@ const experiences = [
     location: "Baltimore, MD",
     dates: "May 2022 – Aug 2022",
     year: "2022",
-    image: "/images/experience-northrop.jpg",
+    image: "`${BASE_URL}images/experience-northrop.jpg",
     summary:
       "Built a prototype testing framework while working with engineers in a cybersecurity-focused Agile environment.",
     bullets: [

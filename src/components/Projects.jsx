@@ -1,11 +1,12 @@
 import { useState } from "react"
+const BASE_URL = import.meta.env.BASE_URL
 
 const projects = [
   {
     title: "Ikhaya Lethu × Develop for Good",
     category: "Product",
     role: "Product Manager",
-    image: "/images/project-ikhaya-lethu.jpg",
+    image: "{BASE_URL}images/project-ikhaya-lethu.jpg",
     award: null,
     description:
       "Led a cross-functional team redesigning the digital presence of a South African nonprofit serving older adults. Managed product scope, client communication, platform decisions, task assignments, and delivery of a responsive WordPress website.",
@@ -23,7 +24,7 @@ const projects = [
       },
       {
         label: "View Presentation",
-        url: "/documents/project-ikhaya-lethu-presentation.pdf",
+        url: "{BASE_URL}documents/project-ikhaya-lethu-presentation.pdf",
       },
     ],
   },
@@ -32,7 +33,7 @@ const projects = [
     title: "YouTube Engagement & Comment Extremeness",
     category: "Research",
     role: "Researcher",
-    image: "/images/project-youtube-extremeness.jpg",
+    image: "{BASE_URL}images/project-youtube-extremeness.jpg",
     award: null,
     description:
       "Analyzed more than 691,000 YouTube comments to study whether highly engaged videos attract more extreme comment sections. Used sentiment and toxicity analysis to construct an extremeness metric and found that video category was more predictive of comment extremeness than engagement itself.",
@@ -47,11 +48,11 @@ const projects = [
     links: [
       {
         label: "Read Paper",
-        url: "/documents/project-youtube-extremeness-paper.pdf",
+        url: "{BASE_URL}documents/project-youtube-extremeness-paper.pdf",
       },
       {
         label: "View Presentation",
-        url: "/documents/project-youtube-extremeness-presentation.pdf",
+        url: "{BASE_URL}documents/project-youtube-extremeness-presentation.pdf",
       },
     ],
   },
@@ -61,7 +62,7 @@ const projects = [
     category: "Research",
     secondaryCategory: "Education",
     role: "Volunteer Contributor",
-    image: "/images/project-ai-literacy.jpg",
+    image: "{BASE_URL}images/project-ai-literacy.jpg",
     award: null,
     description:
       "Contributed to a two-player educational escape room designed to help non-expert adults better understand artificial intelligence. Volunteered on puzzle ideation and helped implement portions of the HTML, CSS, and JavaScript prototype around topics including AI bias, reliability, and responsible use.",
@@ -89,7 +90,7 @@ const projects = [
     title: "Dementia NLP Research",
     category: "Research",
     role: "Undergraduate Research Assistant",
-    image: "/images/project-dementia-nlp.jpg",
+    image: "{BASE_URL}images/project-dementia-nlp.jpg",
     award: "1st Place — University Research & Innovation Expo",
     description:
       "Applied natural language processing techniques, including TF-IDF, to analyze dementia community discussions and identify key terms and language patterns. Presented the research at the University Research & Innovation Expo and won first place.",
@@ -103,7 +104,7 @@ const projects = [
     links: [
       {
         label: "View Poster",
-        url: "/documents/project-dementia-nlp-poster.pdf",
+        url: "{BASE_URL}documents/project-dementia-nlp-poster.pdf",
       },
     ],
   },
@@ -113,7 +114,7 @@ const projects = [
     category: "Research",
     secondaryCategory: "Capstone",
     role: "Senior Capstone",
-    image: "/images/project-hate-speech.jpg",
+    image: "{BASE_URL}images/project-hate-speech.jpg",
     award: null,
     description:
       "Developed a senior capstone project focused on detecting hate speech in online text using machine learning and natural language processing techniques.",
@@ -127,11 +128,11 @@ const projects = [
     links: [
       {
         label: "Read Paper",
-        url: "/documents/project-hate-speech-paper.pdf",
+        url: "{BASE_URL}documents/project-hate-speech-paper.pdf",
       },
       {
         label: "View Poster",
-        url: "/documents/project-hate-speech-poster.pdf",
+        url: "{BASE_URL}documents/project-hate-speech-poster.pdf",
       },
     ],
   },
@@ -141,7 +142,7 @@ const projects = [
     category: "Personal",
     secondaryCategory: "Product",
     role: "Mobile App Creator",
-    image: "/images/project-bulldog-grub.jpg",
+    image: "{BASE_URL}images/project-bulldog-grub.jpg",
     award: "1st Place — Mobile App Competition",
     description:
       "Designed and built a mobile application using Adalo as part of a university mobile app competition. The project combined product design, no-code development, and rapid prototyping and earned first place.",

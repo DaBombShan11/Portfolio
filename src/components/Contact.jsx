@@ -1,5 +1,6 @@
 import { Mail, MapPin, Briefcase, ArrowUpRight } from "lucide-react"
 import { FaGithub, FaLinkedin } from "react-icons/fa"
+const BASE_URL = import.meta.env.BASE_URL
 
 function Contact() {
   return (
@@ -48,7 +49,7 @@ function Contact() {
                 </a>
 
                 <a
-                  href="/documents/resume.pdf"
+                  href="{BASE_URL}documents/resume.pdf"
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex items-center gap-2 border border-pink-400/40 px-6 py-3 rounded-lg font-semibold text-slate-200 hover:border-pink-300 hover:text-pink-200 transition"
@@ -161,7 +162,7 @@ function Contact() {
                 <div className="absolute -inset-4 border border-pink-400/30 rounded-3xl -rotate-3"></div>
 
                 <img
-                  src="/images/contact-ashanti.jpeg"
+                  src="{BASE_URL}images/contact-ashanti.jpeg"
                   alt="Ashanti Boone"
                   className="relative w-full aspect-[4/5] object-cover rounded-3xl"
                 />
