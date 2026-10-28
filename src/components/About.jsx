@@ -84,7 +84,7 @@ const awards = [
 const techCategories = [
   {
     title: "Languages",
-    items: ["Python", "JavaScript", "Java", "HTML/CSS"],
+    items: ["Python", "JavaScript", "Java", "HTML/CSS", "GraphQL"],
   },
   {
     title: "Frameworks & Libraries",
@@ -114,6 +114,7 @@ const techCategories = [
 function About() {
   const [flippedCommunity, setFlippedCommunity] = useState(null)
   const [flippedAward, setFlippedAward] = useState(null)
+  const [activeTechCategory, setActiveTechCategory] = useState("Languages")
 
   function flipCommunity(index) {
     setFlippedCommunity(flippedCommunity === index ? null : index)
@@ -461,28 +462,53 @@ function About() {
             Tools & Technologies
           </h3>
 
-          <div className="space-y-8">
-            {techCategories.map((category) => (
-              <div key={category.title}>
-                <p className="text-sm uppercase tracking-wider text-slate-500 mb-4">
-                  {category.title}
-                </p>
+          {/* CATEGORY BUTTONS */}
+          <div className="flex flex-wrap gap-3 mb-8">
+            {techCategories.map((category) => {
+              const isActive = activeTechCategory === category.title
 
-                <div className="flex flex-wrap gap-3">
-                  {category.items.map((item) => (
-                    <span
-                      key={item}
-                      className="px-4 py-2 rounded-full border border-pink-400/25 bg-pink-400/5 text-pink-100 text-sm hover:border-pink-400/60 transition"
-                    >
-                      {item}
-                    </span>
-                  ))}
+              return (
+                <button
+                  key={category.title}
+                  type="button"
+                  onClick={() => setActiveTechCategory(category.title)}
+                  aria-pressed={isActive}
+                  className={`px-5 py-2.5 rounded-full border text-sm font-medium transition ${
+                    isActive
+                      ? "bg-pink-400 text-[#0F0A12] border-pink-400"
+                      : "border-pink-400/25 text-slate-300 hover:border-pink-400 hover:text-pink-200"
+                  }`}
+                >
+                  {category.title}
+                </button>
+              )
+            })}
+          </div>
+
+          {/* SELECTED CATEGORY CONTENT */}
+          <div className="border border-pink-400/20 rounded-2xl bg-pink-400/5 p-6 md:p-8 min-h-[160px]">
+            {techCategories
+              .filter((category) => category.title === activeTechCategory)
+              .map((category) => (
+                <div key={category.title}>
+                  <p className="text-pink-300 text-sm font-semibold uppercase tracking-wider mb-5">
+                    {category.title}
+                  </p>
+
+                  <div className="flex flex-wrap gap-3">
+                    {category.items.map((item) => (
+                      <span
+                        key={item}
+                        className="px-4 py-2 rounded-full border border-pink-400/25 bg-[#130D16] text-pink-100 text-sm"
+                      >
+                        {item}
+                      </span>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
           </div>
         </div>
-
       </div>
     </section>
   )

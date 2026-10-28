@@ -21,7 +21,7 @@ const projects = [
     links: [
       {
         label: "View Website",
-        url: "https://www.ikhayalethucarefortheelderly.org/",
+        url: "https://ikhayalethucarefortheelderly.org/",
       },
       {
         label: "View Presentation",
@@ -184,7 +184,7 @@ function Projects() {
         {/* SECTION HEADING */}
         <div className="mb-12">
           <p className="text-pink-300 font-medium mb-2">
-            03 / PROJECTS & RESEARCH
+            04 / PROJECTS & RESEARCH
           </p>
 
           <h2 className="text-4xl md:text-5xl font-bold mb-4">

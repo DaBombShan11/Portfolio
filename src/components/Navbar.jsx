@@ -17,6 +17,11 @@ function Navbar() {
             About
           </a>
 
+
+          <a href="#education" className="hover:text-white transition">
+            Education
+          </a>
+
           <a href="#experience" className="hover:text-white transition">
             Experience
           </a>

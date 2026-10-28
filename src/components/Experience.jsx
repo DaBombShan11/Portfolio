@@ -133,7 +133,7 @@ function Experience() {
         {/* SECTION HEADING */}
         <div className="mb-16">
           <p className="text-pink-300 font-medium mb-2">
-            02 / EXPERIENCE
+            03 / EXPERIENCE
           </p>
 
           <h2 className="text-4xl md:text-5xl font-bold mb-4">

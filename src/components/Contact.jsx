@@ -11,7 +11,7 @@ function Contact() {
           {/* SECTION HEADING */}
           <div className="mb-14">
             <p className="text-pink-300 font-medium mb-2">
-              04 / CONTACT
+              05 / CONTACT
             </p>
 
             <h2 className="text-4xl md:text-5xl font-bold">
